@@ -1,4 +1,4 @@
-/*const express = require('express');
+const express = require('express');
 const router = express.Router();
 const Razorpay = require('razorpay');
 const crypto = require('crypto');
@@ -59,4 +59,4 @@ router.get('/razorpay/key', protect, (req, res) => {
   res.json({ success: true, key: process.env.RAZORPAY_KEY_ID });
 });
 
-module.exports = router;*/
+module.exports = router;

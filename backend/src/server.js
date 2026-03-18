@@ -15,7 +15,7 @@ const orderRoutes = require('./routes/orders');
 const userRoutes = require('./routes/users');
 const categoryRoutes = require('./routes/categories');
 const reviewRoutes = require('./routes/reviews');
-// const paymentRoutes = require('./routes/payments'); ❌ disabled
+const paymentRoutes = require('./routes/payments'); 
 const uploadRoutes = require('./routes/upload');
 const adminRoutes = require('./routes/admin');
 
@@ -69,7 +69,7 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/reviews', reviewRoutes);
-// app.use('/api/payments', paymentRoutes); ❌ disabled
+ app.use('/api/payments', paymentRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/admin', adminRoutes);
 
