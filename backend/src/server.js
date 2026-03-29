@@ -40,10 +40,14 @@ app.use('/api/', limiter);
 
 // 🌐 CORS (safe for now)
 app.use(cors({
-  origin: '*',
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://your-admin.vercel.app",
+    "https://your-frontend.vercel.app"
+  ],
   credentials: true,
 }));
-
 
 // 🧾 Body parser
 app.use(express.json({ limit: '10mb' }));
